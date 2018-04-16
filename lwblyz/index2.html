@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>我们的爱情故事</title>
+    
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="./jscss/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./jscss/jquery.js"></script>
+    <script type="text/javascript" src="./jscss/garden.js"></script>
+    <script type="text/javascript" src="./jscss/functions.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="content" style="width: 1110px; height: 625px; margin-top: 52px; margin-left: 245px;">
+            <div id="code" style="margin-top: 112.5px;">
+                <span class="comments">/**</span><br>
+                <span class="space"><span class="comments">*因为我是学软件的,</span><br>
+                <span class="space"><span class="comments">*所以我写一些代码来显示我对你的爱.</span><br>
+                <span class="space"><span class="comments">*/</span><br>
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">"梁伟冰"</span>);<br>
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">"李怡卓"</span>);<br>
+                <span class="comments">// 看过你闺蜜与她们男朋友的各种浪漫，</span><br>
+                i.love(u);<br>
+                <span class="comments">// 我很内疚与自责没给过你任何的表达，</span><br>
+                u.sayOtherthing();<br>
+                <span class="comments">// 也许是距离，也许是情商，</span><br>
+                <span class="keyword">var</span> reason=i.ask(u);<br>
+                <span class="comments">// 让我心里每日被思念撕扯却没办法让你知道我也在想你。</span><br>
+                $("body").append(reason);<br>
+                <span class="comments">// 我不在你身边又什么也不会做怎么给你温暖，</span><br>
+                <span class="comments">// But take care of u and our love.</span><br>
+                i.takeCareOf(u);<br>
+                <span class="comments">//一天突然想到为什么不用自己学的东西去表达 。</span><br>
+                <span class="keyword">boolean</span> isAccept = <span class="keyword">false</span>;<br>
+                <span class="keyword">while</span> (isAccept) {<br>
+                <span class="placeholder">i.waitFor(u);<br>
+                <span class="placeholder"><span class="comments">// 可还是难住了我好久，我只想告诉你：</span><br>
+                <span class="placeholder"><span class="comments">// 爱你这件事对我来说只有继续没有到此为止。</span><br>
+                <span class="placeholder">isAccept = u.thinkOver();<br>
+                }<br>
+                <span class="comments">// 也算是一件迟来的生日礼物。</span><br>
+                u.accept(i);<br>
+                i.liveHappilyWith(u);<br>
+
+
+            </span></span></span></span></span></span></span>_</div>
+            <div id="loveHeart">
+                <canvas id="garden" width="670" height="625"></canvas>
+                <div id="words" style="position: absolute; top: 257px; left: 765px;">
+                    <div id="messages" style="display: block;">
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3712320065678109";
+/* lovead */
+google_ad_slot = "0650322805";
+google_ad_width = 320;
+google_ad_height = 50;
+//-->
+</script>
+</center>
+                        卓卓，我会在山东时刻想着你。然后，往屏幕左边看！O(∩_∩)O
+                        <div id="elapseClock" style="display:none"></div>
+                        <a href="index3.html" id="accept">李怡卓小姐，如果你也想我，请点击这里，并且晃动鼠标。</a>
+                    </div>
+                    <div id="loveu" style="display: block;">
+                        卓卓，等我给你一个家。<br>
+                        <div class="signature">- 梁伟冰先生</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                adjustWordsPosition();
+                startHeartAnimation();
+            }, 10000);
+            
+            $("#accept").click(function(){
+                $(this).hide();
+                $("#elapseClock").show();
+                var together = new Date();
+                timeElapse(together);
+                setInterval(function () {
+                    timeElapse(together);
+                }, 500);
+            })
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
+	<audio src="20140413_025646.mp3" autoplay="autoplay"></audio>
+
+</body></html>
